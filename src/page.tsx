@@ -2,6 +2,7 @@ import { Link } from "react-router-dom"
 import { Button } from "@/components/ui/button"
 import { ArrowRight, Pill, Stethoscope, ScanLine, Clock, Shield, User } from "lucide-react"
 import React from "react"
+import mediCopilotImg from "@/assets/medi-copilot-app.png" // Adjust the path as necessary
 
 export default function HomePage() {
   return (
@@ -31,7 +32,7 @@ export default function HomePage() {
                 {/* <div className="absolute inset-0 bg-blue-200 rounded-full opacity-20 animate-pulse"></div> */}
                 
                 <img
-                  src="/medi-copilot-app.png"
+                  src={mediCopilotImg}
                   alt="Medi-Copilot App"
                   className="relative z-10 rounded-lg shadow-lg object-cover w-full h-full"
                   onError={(e) => {
