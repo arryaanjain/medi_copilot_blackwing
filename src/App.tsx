@@ -13,15 +13,17 @@ import OCR from "@/ocr/page"
 import "./globals.css"
 import React from "react"
 import ScrollToTop from "./components/ScrollToTop"
+import ScrollToHash from "./components/ScrollToHash"
 
 const App = () => {
   return (
     <>
     <Router>
+      <ScrollToTop />
+      <ScrollToHash />
       <div className="gradient-background">
         <Navbar />
         <main className="min-h-screen">
-          <ScrollToTop />
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/add-treatment" element={<AddTreatment />} />
